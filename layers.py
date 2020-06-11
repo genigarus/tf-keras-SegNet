@@ -17,7 +17,7 @@ class MaxPoolingWithArgmax2D(Layer):
             ksize = [1, pool_size[0], pool_size[1], 1]
             padding = padding.upper()
             strides = [1, strides[0], strides[1], 1]
-            output, argmax = K.tf.nn.max_pool_with_argmax(
+            output, argmax = tf.nn.max_pool_with_argmax(
                 inputs, ksize=ksize, strides=strides, padding=padding
             )
         else:
