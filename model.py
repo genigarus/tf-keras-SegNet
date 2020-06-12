@@ -63,7 +63,7 @@ def segnet(input_shape, n_labels, kernel=3, pool_size=(2, 2), output_mode="softm
     conv_13 = Activation("relu")(conv_13)
 
     pool_5, mask_5 = MaxPoolingWithArgmax2D(pool_size)(conv_13)
-    print("Build enceder done..")
+    print("Build encoder done..")
 
     # decoder
 
