@@ -1,6 +1,6 @@
 import tensorflow as tf
-from keras import backend as K
-from keras.layers import Layer
+from tf.keras import backend as K
+from tf.keras.layers import Layer
 
 
 class MaxPoolingWithArgmax2D(Layer):
